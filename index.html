@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
   <title>Document</title>
 </head>
-<body>
+<body class="body">
   <div class="item" id="text"> </div>
   <div class="buttonContainer">
-    <div style="flex:1"> <button class="button" onclick="clickFunction(1)">真心话</button>  </div>
-    <div style="flex:1"> <button class="button" onclick="clickFunction(2)">大冒险</button>    </div>
+    <div style="flex:1"> <button class="button" id="bt1" onclick="clickFunction(1)">真心话</button>  </div>
+    <div style="flex:1"> <button class="button" id="bt2" onclick="clickFunction(2)">大冒险</button>    </div>
   </div>
 
   <script>
@@ -39,19 +40,29 @@
 
   </script>
   <style>
-    .button{
-      font-size: 2rem;
-      border-radius: 5%;
-      border: #fff ;
-      background-color: #50a0fb;
-      color: #fff;
-      padding: 1rem;
+    .body{
+      /* background-color: #1BBE80; */
     }
     .buttonContainer{
       margin-top: 4rem;
       display: flex;
       text-align: center;
       align-items: center;
+    }
+    .button{
+      font-size: 2rem;
+      border-radius: 5%;
+      border: #0D85A7 ;
+      color: #fff;
+      padding: 1rem;
+    }
+    #bt1{
+      background-color: #D80630;
+
+    }
+    #bt2{
+      background-color: #F9B404;
+
     }
     .item{
       margin-top: 6rem;
